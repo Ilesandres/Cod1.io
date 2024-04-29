@@ -5,6 +5,7 @@ void main(){
   final abilities=['impostor'];
   final sprites=<String>['ditto/front.pnh','ditto/back.png'];
   
+  
   print("""
   
   $pokemon
