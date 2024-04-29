@@ -1,47 +1,41 @@
-void main(){
+
+void main() {
+  final Hero wolverine = new Hero("Logan", "Regeneration");
+
+  print(wolverine);
+  print(wolverine.name);
+  print(wolverine.power);
   
-  print(greetEveryone());
+  print(" ");
   
-  print("suma : ${addTwoNumbers(10,20)}");
-  print("suma opcional  : ${addTwoNumbersOptional(10)}");
-  print(greetPerson(name: 'Andres',message: 'Hi'));
-  
+  final Datos datosWolverine=new Datos("32",'M','1215153','california');
+  print(datosWolverine);
+  print("edad  :${datosWolverine.edad}");
+  print("genero : ${datosWolverine.genero}");
+  print("telefono : ${datosWolverine.telefono}");
+  print("Ciudad  :  ${datosWolverine.Ciudad}");
+}
+
+class Hero {
+  String name;
+  String power;
+
+  Hero(String pName, String pPower)
+      : name = pName,
+        power = pPower;
 }
 
 
-String greetEveryone()=> 'hello everyone';
 
-int addTwoNumbers(int A,int B)=>  A+B;
+class Datos {
+  String? edad;
+  String? genero;
+  String? telefono;
+  String? Ciudad;
 
-
-//parametro opcional B
-
-int addTwoNumbersOptional(int A,[int B=0, int c=0 ]){
-  
-  //pongo en 0 B si B es null
- // B??=0;
-  
-  return A+B;
-  
+  Datos(String pEdad, String pGenero, String pTelefono, this.Ciudad) {
+    this.edad = pEdad;
+    this.genero = pGenero;
+    this.telefono = pTelefono;
   }
-
-String greetPerson({required String name, String message='Hola'}){
-  
-  return '$message,  $name ';
-  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
