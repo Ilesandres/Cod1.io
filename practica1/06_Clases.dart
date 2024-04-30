@@ -62,6 +62,7 @@ class Mision {
     //cambia el nombre del titulo de 
     //return ' Mision';
     return '$mision ---$ubicacion';
+    
   }
   
 }
