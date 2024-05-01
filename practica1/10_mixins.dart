@@ -7,7 +7,7 @@ abstract class Ave extends Animal {}
 abstract class Pez extends Animal {}
 
 mixin Caminante {
-  void caminar() => print('estoy caminando');
+  void caminar() => print('estoy caminando ..');
 }
 
 mixin Nadador {
